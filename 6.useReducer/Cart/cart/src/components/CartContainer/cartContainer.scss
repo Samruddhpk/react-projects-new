@@ -1,0 +1,66 @@
+.cartContainer {
+  width: 90vw;
+  max-width: 800px;
+  margin: 4rem auto;
+
+  h3 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  hr {
+    margin-top: 2rem;
+  }
+  .total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    h5,
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    .total {
+      background-color: violet;
+      color: whitesmoke;
+      padding: 0.25rem 0.75rem;
+      border-radius: 5px;
+    }
+  }
+  .clear-btn {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: transparent;
+    display: block;
+    margin: 0 auto;
+    background-color: violet;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    font-family: inherit;
+    letter-spacing: 1.2px;
+  }
+  .clear-btn:hover {
+    background-color: rgb(192, 36, 192);
+  }
+}
+
+.empty-bag {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  h4 {
+    color: violet;
+  }
+}

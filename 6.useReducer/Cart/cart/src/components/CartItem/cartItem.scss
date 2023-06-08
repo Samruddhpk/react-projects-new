@@ -1,0 +1,60 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  .item-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 1rem;
+    img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: cover;
+    }
+    .item-desc {
+      h5 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        letter-spacing: 1.2px;
+      }
+      p {
+        // font-size: 15px;
+        color: gray;
+        margin-bottom: 0.5rem;
+      }
+      .remove-btn {
+        border: transparent;
+        background-color: transparent;
+        color: rgb(236, 48, 236);
+        cursor: pointer;
+        font-size: 15px;
+        transition: all 0.4s ease-in-out;
+      }
+      .remove-btn:hover {
+        color: rgb(126, 27, 126);
+      }
+    }
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      border: transparent;
+      background-color: transparent;
+      font-size: 1.5rem;
+      color: rgb(236, 48, 236);
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+    }
+    .btn:hover {
+      color: rgb(126, 27, 126);
+    }
+  }
+}
