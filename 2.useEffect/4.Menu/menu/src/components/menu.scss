@@ -1,0 +1,15 @@
+.menu-container {
+  display: grid;
+  margin: 2rem auto;
+  gap: 2rem;
+  justify-items: center;
+  width: 90vw;
+  max-width: 1120px;
+}
+
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  .menu-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

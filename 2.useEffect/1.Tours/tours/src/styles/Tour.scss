@@ -1,0 +1,78 @@
+.single-tour {
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+        0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+
+    img {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        height: 20rem;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .tour-price {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(8, 172, 8);
+        color: #fff;
+        padding: 10px;
+        border-radius: 0 5px 0 5px;
+
+    }
+
+    .tour-info {
+        padding: 2rem 1.5rem;
+
+        h5 {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        p {
+            color: gray;
+            line-height: 1.5;
+            font-size: 15px;
+            margin-bottom: 1rem;
+
+            .readMore-btn {
+                margin-left: 3px;
+                font-weight: 700;
+                font-size: 15px;
+                border: 0;
+                background-color: transparent;
+                color: rgb(7, 173, 7);
+                cursor: pointer;
+            }
+        }
+
+        .delete-btn {
+            margin-top: 1rem;
+            width: 100%;
+            border: 1px solid green;
+            background-color: transparent;
+            color: #333;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .delete-btn:hover {
+            background-color: rgb(7, 173, 7);
+            color: white;
+        }
+    }
+
+}
+
+.single-tour:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

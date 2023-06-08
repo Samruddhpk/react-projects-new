@@ -1,0 +1,39 @@
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  .job-btn {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    transition: all 0.4s ease-in-out;
+    font-weight: 500;
+  }
+  .active-btn {
+    color: #14b8a6;
+    box-shadow: 0 2px #14b8a6;
+  }
+  .job-btn:hover {
+    color: #14b8a6;
+    box-shadow: 0 2px #14b8a6;
+  }
+}
+
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  .btn-container {
+    .job-btn {
+      padding: 0 2rem;
+    }
+    .job-btn:hover {
+      color: #14b8a6;
+      box-shadow: -2px 0px #14b8a6;
+    }
+    .active-btn {
+      color: #14b8a6;
+      box-shadow: -2px 0px #14b8a6;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem;
+  h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #333;
+  }
+  .underline {
+    width: 75px;
+    background-color: orangered;
+    height: 5px;
+  }
+}

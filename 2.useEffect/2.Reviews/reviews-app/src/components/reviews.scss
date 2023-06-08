@@ -1,0 +1,112 @@
+.reviews {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    width: 90vw;
+    max-width: 600px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+
+    .img-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 1rem auto;
+
+
+        img {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            transform: translateY(25%);
+            background: purple;
+            color: white;
+        }
+    }
+
+    .img-container::before {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: -3px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: purple;
+        z-index: -1;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .job {
+        letter-spacing: 1.5px;
+        color: purple;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .desc {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: gray;
+    }
+
+    .btn-container {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+
+        .btn {
+            border: 0;
+            background-color: transparent;
+            color: purple;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .btn:hover {
+            color: rgb(248, 51, 248);
+        }
+    }
+
+    .surprise-btn {
+        border: 0;
+        background-color: purple;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        text-transform: capitalize;
+        font-family: inherit;
+        font-weight: 700;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .surprise-btn:hover {
+        background-color: rgb(192, 10, 192);
+    }
+
+}

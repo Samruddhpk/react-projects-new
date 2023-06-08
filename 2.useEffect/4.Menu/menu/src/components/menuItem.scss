@@ -1,0 +1,44 @@
+.single-menuItem {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+  img {
+    height: 15rem;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .info {
+    padding: 2rem;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+
+      h5 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+      }
+      span {
+        background-color: orangered;
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+    p {
+      color: #64748b;
+      font-size: 15px;
+      line-height: 2;
+      word-spacing: 1.5px;
+      font-weight: 300;
+    }
+  }
+}
