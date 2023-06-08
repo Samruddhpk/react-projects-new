@@ -1,0 +1,31 @@
+article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  .name-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  h4 {
+    font-weight: 500;
+  }
+  .delete-btn {
+    padding: 0.5rem;
+    border: transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 68, 0, 0.76);
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+  .delete-btn:hover {
+    background-color: rgb(255, 0, 0);
+  }
+}

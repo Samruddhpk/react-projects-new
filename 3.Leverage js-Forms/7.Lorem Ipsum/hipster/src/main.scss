@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(233, 244, 247);
+}
+
+section {
+  text-align: center;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  h4 {
+    letter-spacing: 1.2px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  .form-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    label {
+      text-transform: capitalize;
+    }
+    input {
+      background-color: whitesmoke;
+      border: transparent;
+      padding: 0.25rem;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    input:focus {
+      outline-color: rgb(19, 168, 168);
+    }
+    .btn {
+      background-color: rgb(19, 168, 168);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      text-transform: capitalize;
+    }
+    .btn:hover {
+      background-color: rgb(25, 122, 122);
+    }
+  }
+  article {
+    text-align: justify;
+
+    .para {
+      text-indent: 2rem;
+      margin: 1rem 0;
+      line-height: 1.5;
+      letter-spacing: 1.2px;
+      color: #333;
+    }
+    .para::first-letter {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
