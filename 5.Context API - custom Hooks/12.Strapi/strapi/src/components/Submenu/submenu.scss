@@ -1,0 +1,52 @@
+.submenu {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .submenu {
+    display: block;
+    position: fixed;
+    top: 7rem;
+    left: 50%;
+    width: 90vw;
+    max-width: 1120px;
+    background: whitesmoke;
+    padding: 2rem;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top;
+    perspective: 1000px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    z-index: -1;
+    text-transform: capitalize;
+  }
+  .show-submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0deg) translateX(-50%);
+    z-index: 10;
+  }
+  .submenu h5 {
+    margin-bottom: 1rem;
+    color: #4338ca;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .submenu-links {
+    display: grid;
+    row-gap: 0.5rem;
+  }
+  .submenu-links a {
+    display: block;
+    color: #0f172a;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 15px;
+  }
+  .submenu-links svg {
+    color: #64748b;
+  }
+}

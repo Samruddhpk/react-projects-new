@@ -1,0 +1,40 @@
+section {
+  width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+  place-items: center;
+  padding: 3rem 2rem;
+
+  .hero-center {
+    color: white;
+    h1 {
+      word-wrap: wrap;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+    }
+    p {
+      max-width: 35rem;
+
+      font-size: 14px;
+      letter-spacing: 1.2px;
+      font-weight: 300;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  section {
+    padding: 6rem 2rem;
+    .hero-center {
+      text-align: center;
+      h1 {
+        font-size: 4rem;
+        font-weight: 800;
+      }
+      p {
+        max-width: 40rem;
+      }
+    }
+  }
+}

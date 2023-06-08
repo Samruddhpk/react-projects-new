@@ -1,0 +1,70 @@
+nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .nav-center {
+    width: 90vw;
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      font-size: 2rem;
+      color: white;
+      letter-spacing: 1.2px;
+    }
+    .toggle-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      background-color: white;
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      color: #4338ca;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.4s ease-in-out;
+    }
+    .toggle-btn:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .nav-links {
+    gap: 30px;
+    display: none;
+
+    .nav-link {
+      text-transform: capitalize;
+      font-size: 1.3rem;
+      border: 0;
+      background-color: transparent;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    justify-content: start;
+    .nav-center {
+      align-self: stretch;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      .toggle-btn {
+        display: none;
+      }
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-self: stretch;
+    }
+  }
+}
